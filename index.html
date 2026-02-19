@@ -44,7 +44,7 @@
         }
         .project-img img:hover { transform: scale(1.02); }
         
-        /* Galería secundaria (para los gráficos extra) */
+        /* Galería secundaria */
         .project-gallery { 
             display: grid; 
             grid-template-columns: 1fr 1fr; 
@@ -61,7 +61,7 @@
         footer { text-align: center; padding: 40px; color: #666; font-size: 0.9rem; border-top: 1px solid #ddd; margin-top: 40px; }
 
         /* Responsive */
-        @media (max-width: 768px) { .project-content { grid-template-columns: 1fr; } }
+        @media (max-width: 768px) { .project-content { grid-template-columns: 1fr !important; } }
     </style>
 </head>
 <body>
@@ -99,7 +99,7 @@
                     <span>KPIs</span>
                 </div>
             </div>
-            <div class="project-content">
+            <div class="project-content" style="grid-template-columns: 1fr;">
                 <div class="project-text">
                     <h3>Contexto</h3>
                     <p>Simulación de un entorno E-commerce. El objetivo fue reconstruir el "Customer Journey" para identificar por qué los usuarios abandonaban el carrito de compras.</p>
@@ -108,15 +108,13 @@
                     <ul>
                         <li>Unifiqué tablas de eventos y usuarios (front y back) usando <strong>JOINs y subconsultas</strong>.</li>
                         <li>Calculé la tasa de conversión por etapas para detectar fugas.</li>
+                        <li>Segmenté la data por ubicación geográfica para encontrar patrones regionales.</li>
                     </ul>
 
                     <h3>Resultados Clave</h3>
                     <p>🚨 Identifiqué una caída crítica del <strong>85% en el "Add-to-Cart"</strong>. Además, detecté un fallo técnico en Ecuador, Colombia y Paraguay (0% conversión), recomendando revisión inmediata de pasarelas de pago.</p>
                     
-                    <a href="https://github.com/acalixtroq" class="btn">Ver SQL en GitHub</a>
-                </div>
-                <div class="project-img">
-                    <img src="https://via.placeholder.com/500x300?text=Captura+de+Codigo+SQL+Pendiente" alt="SQL Code Placeholder">
+                    <a href="https://github.com/acalixtroq" class="btn">Ver Perfil en GitHub</a>
                 </div>
             </div>
         </section>
@@ -130,7 +128,7 @@
                     <span>Visualización</span>
                 </div>
             </div>
-            <div class="project-content">
+            <div class="project-content" style="grid-template-columns: 1fr 1fr;">
                 <div class="project-text">
                     <h3>Contexto</h3>
                     <p>Investigación estadística en 387 ciudades para correlacionar la congestión vehicular con la productividad económica (PIB).</p>
@@ -145,20 +143,20 @@
                     <h3>Resultados Clave</h3>
                     <p>🏙️ <strong>Conclusión:</strong> Bogotá requiere inversión prioritaria. Como muestra el gráfico principal, tiene niveles de congestión (~1,141 mins) similares a ciudades ricas, pero con un PIB desproporcionadamente bajo.</p>
                     
-                    <a href="https://github.com/acalixtroq" class="btn">Ver Python en GitHub</a>
+                    <a href="https://github.com/acalixtroq/Portafolio-Alberto-Calixtro/blob/main/Analisis_Movilidad_Economia.ipynb" class="btn" target="_blank">Ver Notebook en GitHub</a>
                 </div>
                 
                 <div>
                     <div class="project-img">
                         <img src="grafico_top15.png" alt="Gráfico Top 15 Ciudades Congestión vs PIB">
-                        <p style="font-size:0.8rem; color:#666; text-align:center;">Figura 1: Comparativa de Congestión vs PIB</p>
+                        <p style="font-size:0.8rem; color:#666; text-align:center; margin-top:5px;">Figura 1: Comparativa de Congestión vs PIB</p>
                     </div>
                     
                     <div class="project-gallery">
                         <img src="grafico_boxplot.png" alt="Distribución de Retrasos">
                         <img src="grafico_hist.png" alt="Distribución de PIB">
                     </div>
-                    <p style="font-size:0.8rem; color:#666; text-align:center;">Exploración de datos (Outliers y Distribución)</p>
+                    <p style="font-size:0.8rem; color:#666; text-align:center; margin-top:5px;">Exploración de datos (Outliers y Distribución)</p>
                 </div>
             </div>
         </section>
